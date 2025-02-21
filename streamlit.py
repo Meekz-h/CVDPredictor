@@ -7,7 +7,7 @@ scaler = pickle.load(open('./min_max_scaler.sav', 'rb'))
 
 streamlit.title('CVD Predictor')
 age = streamlit.number_input('Age')
-max_heart_reate = streamlit.number_input('Max Heart Rate:')
+max_heart_reate = streamlit.number_input('Max Heart Rate:', format="%f")
 exercise_angina = streamlit.text_input('Exercise Pain? Y or N')
 sex = streamlit.text_input('Sex: M or F')
 
